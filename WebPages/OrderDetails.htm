@@ -1,0 +1,58 @@
+<html>
+<head>
+    <!$MG_title>
+    <script src="./MobileWeb/JS/iui.js"></script>
+    <script src="./MobileWeb/JS/OrdersAjax.js"></script>
+    <script src="./MobileWeb/JS/OrderDetails.js"></script>
+    <script src="./MobileWeb/JS/CustomersAjax.js"></script>
+    <script src="./MobileWeb/JS/ProductsAjax.js"></script>
+    <style type="text/css" media="screen">
+        .suggest_link
+        {
+            background-color: #FFFFFF;
+            padding: 2px 6px 2px 6px;
+        }
+        .suggest_link_over
+        {
+            background-color: #3366CC;
+            padding: 2px 6px 2px 6px;
+        }
+        .Suggestions
+        {
+            position: absolute;
+            background-color: #FFFFFF;
+            text-align: left;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body onload="GetProducts();GetData(<!$MG_Order_Code>)">
+    <div class="toolbar">
+        <h1 id="pageTitle">
+            Order Details</h1>
+        <a id="menulink" class="button" href="#" onclick="javascript:location.href=PRG_URL()+'OrdersList';return false;"
+            style="display: inline">Orders</a> <a id="btnNew" class="button" href="#" onclick="SaveOrder()"
+                style="display: inline">Save</a>
+    </div>
+    <form onsubmit="return false;" class="panel" selected="true">
+    <fieldset>
+        <div class="row">
+            <label>
+                Order#:</label><span id="Order_Number"></span></div>
+        <div class="row">
+            <label>
+                Date:</label><span id="Order_Date"></span></div>
+        <div class="row">
+            <label>
+                Customer:</label><span id="Customer_Name"></span></div>
+        <div class="row">
+            <label>
+                Total:</label><span id="Total"></span></div>
+    </fieldset>
+    <table class="itable" id="Lines">
+    </table>
+    <a id="btnAdd" class="button" href="#" onclick="NewLineSelection()"
+                style="display: inline;font-size: 20px;">Add</a>
+    </form>
+</body>
+</html>

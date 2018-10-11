@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RESULT>
+<MORERECS><!$MG_MoreRecords></MORERECS>
+<!$MGREPEAT>
+<ITEM>
+<CODE><!$MG_Code></CODE>
+<LNAME><!$MG_LName></LNAME>
+<FNAME><!$MG_FName></FNAME>
+<PIC><!$MG_Pic></PIC>
+<!$MGIF_LongDetails>
+<STREET><!$MG_Street></STREET>
+<HNUM><!$MG_HNum></HNUM>
+<CITY_NAME><!$MG_City></CITY_NAME>
+<OPHONE><!$MG_Office_Phone></OPHONE>
+<CPHONE><!$MG_Cell_Phone></CPHONE>
+<!$MGENDIF>
+</ITEM>
+<!$MGENDREPEAT>
+</RESULT>

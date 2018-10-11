@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Products</title><!$MG_title>
+    <script src="./MobileWeb/JS/ProductsAjax.js"></script>
+    <script src="./MobileWeb/JS/ProductsList.js"></script>
+</head>
+<body onload="ResetData();GetData()">
+    <div class="toolbar">
+        <h1 id="pageTitle">
+            Products</h1>
+        <!$MGIF_Show_Menu_Btn> <a id="backButton" class="button" href="#" onclick="javascript:location.href=PRG_URL()+'Menu';return false;"
+            style="display: inline">Menu</a> <!$MGENDIF>
+    </div>
+    <form name="myform" onsubmit="return false;" class="panel" selected="true">
+    <input type="hidden" id="FromOrder" value="<!$MG_From_Order>">
+    <input type="search" size="30" id="Find" results="5" onkeypress="if(enter_pressed(event)){ ResetData();GetData(); }">
+    <table class="itable" id="Table" cellpadding="3" width="10%" style="display: none;
+        visibility: hidden">
+    </table>
+    <div id="btnMore" onclick="GetData()" style="visibility: hidden">
+        Show more products...</div>
+    <div class="progressline" id="req" style="display: none; visibility: hidden">
+        <img alt="progress" src="./MobileWeb/css/indicator.white.gif" /><label>Retrieving
+            data...</label></div>
+    <div class="messageline" id="norecs" style="display: none; visibility: hidden">
+        <label>
+            No products found</label></div>
+    <div class="messageline" id="nomore" style="display: none; visibility: hidden">
+        <label>
+            No additional products found</label></div>
+    <!$MGIF_Show_Select_Btn>
+    	<a id="btnSelect" class="button" href="#" onclick="HandleProductsSelection()"
+                style="display: inline;font-size: 20px;">Select</a>
+    <!$MGENDIF>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RESULT>
+<MORERECS><!$MG_MoreRecords></MORERECS>
+<!$MGREPEAT>
+<ITEM>
+<CODE><!$MG_Code></CODE>
+<DATE><!$MG_Date></DATE>
+<CCODE><!$MG_Ccode></CCODE>
+<CNAME><!$MG_Cname></CNAME>
+<TOTAL><!$MG_Total></TOTAL>
+<!$MGIF_LongDetails>
+<LINES>
+	<!$MGREPEAT>
+	<LINE>
+	<OLINE><!$MG_Line></OLINE>
+	<PCODE><!$MG_Pcode></PCODE>
+	<PNAME><!$MG_Pname></PNAME>
+	<QUANTITY><!$MG_Quantity></QUANTITY>
+	<PRICE><!$MG_Price></PRICE>	
+	</LINE>
+	<!$MGENDREPEAT>
+</LINES>
+<!$MGENDIF>
+</ITEM>
+<!$MGENDREPEAT>
+</RESULT>

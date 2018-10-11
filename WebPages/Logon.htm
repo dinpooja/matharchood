@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Magic Mobile Web</title><!$MG_title>
+    <script src="./MobileWeb/JS/LogonAjax.js"></script>
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle">
+            Magic Mobile Web</h1>
+    </div>
+    <form class="panel" selected="true" id="MainPanel" title="Main Menu" onkeypress="if(enter_pressed(event)){ VerifyLogon(UserName.value);return false; }">
+    <h2>
+        Welcome to Magic Mobile Web Demo</h2>
+    <fieldset>
+        <div class="row">
+            <label>
+                Your name:</label><input type="text" size="20" id="UserName" value=""></div>
+    </fieldset>
+    <h3>
+        Enter any user name and press "Logon".</h3>
+    <a id="logonbutton" class="whiteButton" name="btnLogon" type="button" href="javascript:void();"
+        onclick="VerifyLogon(UserName.value)">Logon</a>
+    <div class="progressline" id="req" style="display: none; visibility: hidden">
+        <img alt="progress" src="./MobileWeb/css/indicator.white.gif" /><label>Authenticating...</label></div>
+    <!$MGIF_iphone>
+    <h3>
+        Note: you can tap the + icon and select "Add to home screen" to bookmark this application.</h3>
+    <!$MGENDIF>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Customers</title><!$MG_title>
+    <script src="./MobileWeb/JS/CustomersAjax.js"></script>
+    <script src="./MobileWeb/JS/CustomersList.js"></script>
+</head>
+<body onload="ResetData();GetData()">
+    <div class="toolbar">
+        <h1 id="pageTitle">
+            Customers</h1>
+        <a id="backButton" class="button" href="#" onclick="javascript:location.href=PRG_URL()+'Menu';return false;"
+            style="display: inline">Menu</a>
+    </div>
+    <form name="myForm" onsubmit="return false;" class="panel" selected="true">
+    <input type="search" size="30" id="Find" results="5" onkeypress="if(enter_pressed(event)){ ResetData();GetData(); }">
+    <table class="itable" id="Table" width="100%" cellpadding="3" style="display: none;
+        visibility: hidden">
+    </table>
+    <div id="btnMore" onclick="GetData()" style="visibility: hidden">
+        Show more customers...</div>
+    <div class="progressline" id="req" style="display: none; visibility: hidden">
+        <img alt="progress" src="./MobileWeb/css/indicator.white.gif" /><label>Retrieving
+            data...</label></div>
+    <div class="messageline" id="norecs" style="display: none; visibility: hidden">
+        <label>
+            No records found</label></div>
+    <div class="messageline" id="nomore" style="display: none; visibility: hidden">
+        <label>
+            No additional records found</label></div>
+    </form>
+</body>
+</html>
+

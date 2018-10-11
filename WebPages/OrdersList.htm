@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Orders</title><!$MG_title>
+    <script src="./MobileWeb/JS/OrdersAjax.js"></script>
+    <script src="./MobileWeb/JS/OrdersList.js"></script>
+    <script src="./MobileWeb/JS/iui.js"></script>
+</head>
+<body onload="ResetData();GetData()">
+    <div class="toolbar">
+        <h1 id="pageTitle">
+            Orders</h1>
+        <a id="menulink" class="button" href="#" onclick="window.location=PRG_URL()+'Menu'"
+            style="display: inline">Menu</a> <a id="btnNew" class="button" href="#" onclick="NewOrder()"
+                style="display: inline">Add</a>
+    </div>
+    <form name="myform" onsubmit="return false;" class="panel" selected="true">
+    <fieldset>
+        <div class="row">
+            <label>
+                Show my orders:</label><div id="myorders" class="toggle" onclick="ResetData();GetData();"
+                    toggled="false">
+                    <span class="thumb"></span><span class="toggleOn">ON</span><span class="toggleOff">OFF</span></div>
+        </div>
+        <div class="row">
+            <label>
+                Find orders:</label><input type="search" size="30" id="Find" value="" onkeypress="if(enter_pressed(event)){ ResetData();GetData(); }" /></div>
+    </fieldset>
+    <table class="itable" id="Table" cellpadding="3" width="100%">
+    </table>
+    <div id="btnMore" onclick="GetData()" style="visibility: hidden">
+        Show more orders...</div>
+    <div class="progressline" id="req" style="display: none; visibility: hidden">
+        <img alt="progress" src="./MobileWeb/css/indicator.white.gif" /><label>Retrieving
+            data...</label></div>
+    <div class="messageline" id="norecs" style="display: none; visibility: hidden">
+        <label>
+            No orders found</label></div>
+    <div class="messageline" id="nomore" style="display: none; visibility: hidden">
+        <label>
+            No additional orders found</label></div>
+    </form>
+</body>
+</html>

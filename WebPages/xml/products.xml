@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RESULT>
+<MORERECS><!$MG_MoreRecords></MORERECS>
+<!$MGREPEAT>
+<ITEM>
+<CODE><!$MG_Code></CODE>
+<NAME><!$MG_Name></NAME>
+<!$MGIF_LongDetails>
+<PIC><!$MG_Pic></PIC>
+<DETAILS><!$MG_Details></DETAILS>
+<CAT_NAME><!$MG_Category></CAT_NAME>
+<SUPP_NAME><!$MG_Supplier></SUPP_NAME>
+<!$MGENDIF>
+</ITEM>
+<!$MGENDREPEAT>
+</RESULT>
